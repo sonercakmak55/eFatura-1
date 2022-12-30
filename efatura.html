@@ -1,0 +1,187 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Kolaysoft E-Fatura</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <!-- <style>
+        
+    </style> -->
+</head>
+
+<body>
+    <div class="image-container;">
+        <hr size="5" width="250px" align="left" color="black">
+        <table class="tablo" style="width: 35%;" align="left">
+            <tr>
+                <th><span>Adres : </span></th>
+                <td><span><input name="adres" type="text" style="width: 100px;border: none;"></span></td>
+            </tr>
+
+            <tr>
+                <th><span>İl/İlçe : </span></th>
+                <td><span><input name="ililce" type="text" style="width: 100px;border: none;"></span></td>
+            </tr>
+            <tr>
+                <th><span>Telefon :</span></th>
+                <td><span><input name="telefon" type="tel" style="width: 100px;border: none;" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="11"></span></td>
+            </tr>
+            <tr>
+                <th><span>Web :</span></th>
+                <td><span><input name="web" type="text" style="width: 100px;border: none;"></span></td>
+            </tr>
+            <tr>
+                <th><span>E-Posta :</span></th>
+                <td><span><input name="eposta" type="text" style="width: 100px;border: none;"></span></td>
+            </tr>
+            <tr>
+                <th><span>Vergi Dairesi :</span></th>
+                <td><span><input name="vergidairesi" type="text" style="width: 100px;border: none;"></span></td>
+            </tr>
+            <tr>
+                <th><span>VKN :</span></th>
+                <td><span><input name="vkn" type="text" style="width: 100px;border: none;"></span></td>
+            </tr>
+            <tr>
+                <th><span>Müşteri No :</span></th>
+                <td><span><input name="müsterino" type="text" style="width: 100px;border: none;"></span></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="image-container">&nbsp;&nbsp;&nbsp;
+        <img src="geliridaresi.png" alt="geliridaresipng" width="160" height="160">
+        <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <b>e-Fatura</b>
+    </div>
+
+    <div class="image-container">
+        <img src="kolaysoft.jpeg" alt="kolaysoftpng" width="160" height="160" align="right">
+    </div>
+
+    <br><br/><br/><br/><br/><br/>
+    <hr size="5" width="250px" align="left" color="black">
+    
+    <article>
+        <hr size="5" width="250px" align="left" color="black">
+        <table class="tablo" style="width: 35%;" align="left">
+            <p>Sayın</p>
+            <tr>
+                <th><span>Ad Soyad : </span></th>
+                <td><span><input name="adsoyad" type="text" style="width: 100px;border: none;"></span></td>
+            </tr>
+
+            <tr>
+                <th><span>İl/İlçe : </span></th>
+                <td><span><input name="ililçe" type="text" style="width: 100px;border: none;"></span></td>
+            </tr>
+            <tr>
+                <th><span>Ülke :</span></th>
+                <td><span><input name="ulke" type="text" style="width: 100px;border: none;"></span></td>
+            </tr>
+            <tr>
+                <th><span>Vergi Dairesi :</span></th>
+                <td><span><input name="vergidairesi" type="text" style="width: 100px;border: none;"></span></td>
+            </tr>
+            <tr>
+                <th><span>TCKN : </span></th>
+                <td><span><input name="tckn" type="text" style="width: 100px;border: none;"></span></td>
+            </tr>
+        </table>
+
+        <table class="tablo" style="width: 35%;" align="right">
+            <tr>
+                <th text-align="left">Özelleştirme:</th>
+                <td><input name="ozellestirme" type="text" maxlength="10" style="width: 100px;border: none;"></td>
+            </tr>
+            <tr>
+                <th text-align="left">Senaryo:</th>
+                <td><input name="senaryo" type="text" maxlength="10" style="width: 100px;border: none;"></td>
+            </tr>
+            <tr>
+                <th text-align="left">Fatura Tipi:</th>
+                <td><select name="faturatipi" id="fattipi" style="width:110px;">
+                        <option value="temel1">Temel Fatura</option>
+                        <option value="temel2">Temel Fatura 2</option>
+                        <option value="temel3">Temel Fatura 3</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <th text-align="left">Fatura No:</th>
+                <td><input name="faturano" type="text" maxlength="10" style="width: 100px;border: none;"></td>
+            </tr>
+            <tr>
+                <th text-align="left">Fatura Tarihi:</th>
+                <td><input name="faturatarihi" type="date" placeholder="dd-mm-yyyy" value="" style="width: 100px;border: none;"></td>
+
+
+            </tr>
+        </table>
+
+        <br><br><br><br><br><br><br><br><br><br>
+        <hr size="5" width="250px" align="left" color="black">
+        <b style="font-size:12px">ETTN:</b><small style="font-size:11.5px"> 4df3888b-0501-4f09-b37a-eb69c9e120c5</small>
+        <table class="inventory">
+            <thead>
+                <tr>
+                    <th><span>Sıra No</span></th>
+                    <th><span>Mal Hizmet</span></th>
+                    <th><span>Miktar</span></th>
+                    <th><span>Birim Fiyat</span></th>
+                    <th><span>KDV Oranı</span></th>
+                    <th><span>KDV Tutarı</span></th>
+                    <th><span>Diğer Vergiler</span></th>
+                    <th><span>Mal Hizmet Tutarı</span></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr >
+                    <td><span><input name="sirano" type="text" maxlength="10" style="width: 75px;border: none"></span></td>
+                    <td><span><input name="malhizmet" type="text" maxlength="10" style="width: 75px;border: none"></span></td>
+                    <td><span><input name="miktar" type="text" maxlength="10" style="width: 75px;border: none"></span></td>
+                    <td><span><input name="birimfiyat" type="text" maxlength="10" style="width: 75px;border: none"></span></td>
+                    <td><span><input name="kdvorani" type="text" maxlength="10" style="width: 75px;border: none"></span></td>
+                    <td><span><input name="kdvtutari" type="text" maxlength="10" style="width: 75px;border: none"></span></td>
+                    <td><span><input name="digervergiler" type="text" maxlength="10" style="width: 75px;border: none"></span></td>
+                    <td><span><input name="malhizmettutari" type="text" maxlength="10" style="width: 75px;border: none"></span></td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="balance">
+            <tr>
+                <th><span>Mal Hizmet Toplam Tutarı</span></th>
+                <td><span>138.89 TL</span></td>
+            </tr>
+            <tr>
+                <th><span>Toplam İskonto</span></th>
+                <td><span>0.00 TL</span></td>
+            </tr>
+            <tr>
+                <th><span>Hesaplanan GERÇEK USULDE KATMA DEĞER VERGİSİ(%8)</span></th>
+                <td><span>11.11 TL</span></td>
+            </tr>
+            <tr>
+                <th><span>Vergiler Dahil Toplam Tutar</span></th>
+                <td><span>150.00 TL</span></td>
+            </tr>
+            <tr>
+                <th><span>Ödenecek Tutar</span></th>
+                <td><span>150.00 TL</span></td>
+            </tr>
+        </table>
+    </article>
+
+<footer>
+
+    <div class="border">
+        <div class="text">Yalnız #YüzElli TL#</div>
+        <img src="karekod.png" alt="Resim Başlığı">
+    </div>
+    <div class="border2"><small>&nbsp; AKBANK / ÇAYYOLU ŞUBE</small> </div>
+    <div class="border2"><small>&nbsp; IBAN: TR04 0004 6012 1588 8000 1622 24</small></div>
+</footer>
+
+</body>
+
+</html>
